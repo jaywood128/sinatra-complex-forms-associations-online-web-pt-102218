@@ -35,7 +35,7 @@ class PetsController < ApplicationController
     erb :"/pets/edit"
   end
   patch '/pets/:id' do
-    binding.pry
+    @pet.update(params["pet"])
     redirect to "pets/#{@pet.id}"
   end
 end
