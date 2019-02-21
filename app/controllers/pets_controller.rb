@@ -30,6 +30,7 @@ class PetsController < ApplicationController
     erb :'/pets/show'
   end
   get '/pets/:id/edit' do
+    binding.pry
 
     erb :"/pets/edit"
   end
